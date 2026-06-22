@@ -119,4 +119,15 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+}// TODO: Estructura base para el módulo de asistencia -  por Oscar
+class AsistenciaModulo {
+  final String usuarioId;
+  final DateTime fechaRegistro;
+  bool asistio;
+
+  AsistenciaModulo({
+    required this.usuarioId,
+    required this.fechaRegistro,
+    this.asistio = false,
+  });
 }
