@@ -6,16 +6,12 @@ class MyStudentsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Students"),
-      ),
+      appBar: AppBar(title: const Text("Students")),
       body: ListView.builder(
         itemCount: 10,
         itemBuilder: (context, index) {
           return ListTile(
-            leading: const CircleAvatar(
-              child: Icon(Icons.person),
-            ),
+            leading: const CircleAvatar(child: Icon(Icons.person)),
             title: Text("Student ${index + 1}"),
             subtitle: const Text("Workshop: Programming"),
           );
