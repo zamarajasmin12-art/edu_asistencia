@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:edu_asistencia/widgets/my_menu_drawer.dart';
 
 class MyStudentsPage extends StatelessWidget {
   const MyStudentsPage({super.key});
@@ -6,20 +7,14 @@ class MyStudentsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Students")),
-      body: ListView.builder(
-        itemCount: 10,
-        itemBuilder: (context, index) {
-          return ListTile(
-            leading: const CircleAvatar(child: Icon(Icons.person)),
-            title: Text("Student ${index + 1}"),
-            subtitle: const Text("Workshop: Programming"),
-          );
-        },
+      drawer: const MyMenuDrawer(),
+
+      appBar: AppBar(
+        title: const Text("Students"),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.add),
+
+      body: const Center(
+        child: Text("Students Page"),
       ),
     );
   }
