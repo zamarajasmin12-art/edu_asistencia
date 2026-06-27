@@ -18,8 +18,8 @@ class MyMenuDrawer extends StatelessWidget {
       child: ListView(
         children: [
           const UserAccountsDrawerHeader(
-            accountName: Text("Administrador"),
-            accountEmail: Text("admin@eduasistencia.com"),
+            accountName: Text("Docente"),
+            accountEmail: Text("Certus@eduasistencia.com"),
             currentAccountPicture: CircleAvatar(
               child: Icon(Icons.person, size: 40),
             ),
@@ -27,7 +27,7 @@ class MyMenuDrawer extends StatelessWidget {
 
           ListTile(
             leading: const Icon(Icons.home),
-            title: const Text("Dashboard"),
+            title: const Text("Inicio"),
             onTap: () {
               Navigator.push(
                 context,
