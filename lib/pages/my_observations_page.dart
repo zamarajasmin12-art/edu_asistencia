@@ -6,12 +6,8 @@ class MyObservationsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Observations"),
-      ),
-      body: const Center(
-        child: Text("Student Observations"),
-      ),
+      appBar: AppBar(title: const Text("Observaciones")),
+      body: const Center(child: Text("Observaciones del Estudiante")),
     );
   }
 }

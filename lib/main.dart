@@ -13,16 +13,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Edu - Asistencia',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(        
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue
-        ),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color.fromARGB(255, 51, 86, 114),
+          foregroundColor: Colors.white,
+          centerTitle: true,
+        ),
+        textTheme: const TextTheme(
+          headlineLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+        ),
       ),
       home: const MyLoginPage(),
     );
   }
-}// TODO: Estructura base para el módulo de asistencia -  por Oscar
+}
+
 class AsistenciaModulo {
   final String usuarioId;
   final DateTime fechaRegistro;
@@ -34,4 +41,3 @@ class AsistenciaModulo {
     this.asistio = false,
   });
 }
-

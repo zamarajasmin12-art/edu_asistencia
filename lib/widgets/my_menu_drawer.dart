@@ -21,10 +21,7 @@ class MyMenuDrawer extends StatelessWidget {
             accountName: Text("Administrador"),
             accountEmail: Text("admin@eduasistencia.com"),
             currentAccountPicture: CircleAvatar(
-              child: Icon(
-                Icons.person,
-                size: 40,
-              ),
+              child: Icon(Icons.person, size: 40),
             ),
           ),
 
@@ -34,87 +31,73 @@ class MyMenuDrawer extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (_) => const MyHomePage(),
-                ),
+                MaterialPageRoute(builder: (_) => const MyHomePage()),
               );
             },
           ),
 
           ListTile(
             leading: const Icon(Icons.people),
-            title: const Text("Students"),
+            title: const Text("Estudiantes"),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (_) => const MyStudentsPage(),
-                ),
+                MaterialPageRoute(builder: (_) => const MyStudentsPage()),
               );
             },
           ),
 
           ListTile(
             leading: const Icon(Icons.engineering),
-            title: const Text("Workshops"),
+            title: const Text("Talleres"),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (_) => const MyWorkshopsPage(),
-                ),
+                MaterialPageRoute(builder: (_) => const MyWorkshopsPage()),
               );
             },
           ),
 
           ListTile(
             leading: const Icon(Icons.qr_code_scanner),
-            title: const Text("QR Scanner"),
+            title: const Text("Escáner QR"),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (_) => const MyQrPage(),
-                ),
+                MaterialPageRoute(builder: (_) => const MyQrPage()),
               );
             },
           ),
 
           ListTile(
             leading: const Icon(Icons.bar_chart),
-            title: const Text("Reports"),
+            title: const Text("Reportes"),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (_) => const MyReportsPage(),
-                ),
+                MaterialPageRoute(builder: (_) => const MyReportsPage()),
               );
             },
           ),
 
           ListTile(
             leading: const Icon(Icons.note_alt),
-            title: const Text("Observations"),
+            title: const Text("Observaciones"),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (_) => const MyObservationsPage(),
-                ),
+                MaterialPageRoute(builder: (_) => const MyObservationsPage()),
               );
             },
           ),
 
           ListTile(
             leading: const Icon(Icons.settings),
-            title: const Text("Settings"),
+            title: const Text("Configuración"),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (_) => const MySettingsPage(),
-                ),
+                MaterialPageRoute(builder: (_) => const MySettingsPage()),
               );
             },
           ),
@@ -123,13 +106,11 @@ class MyMenuDrawer extends StatelessWidget {
 
           ListTile(
             leading: const Icon(Icons.logout),
-            title: const Text("Logout"),
+            title: const Text("Cerrar Sesión"),
             onTap: () {
               Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(
-                  builder: (_) => const MyLoginPage(),
-                ),
+                MaterialPageRoute(builder: (_) => const MyLoginPage()),
                 (route) => false,
               );
             },

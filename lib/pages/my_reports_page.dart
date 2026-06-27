@@ -8,17 +8,10 @@ class MyReportsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const MyMenuDrawer(),
-      
-      appBar: AppBar(
-        title: const Text("Reports"),
-      ),
+
+      appBar: AppBar(title: const Text("Reportes")),
       body: const Center(
-        child: Text(
-          "Attendance Reports",
-          style: TextStyle(
-            fontSize: 24,
-          ),
-        ),
+        child: Text("Reportes de Asistencia", style: TextStyle(fontSize: 24)),
       ),
     );
   }

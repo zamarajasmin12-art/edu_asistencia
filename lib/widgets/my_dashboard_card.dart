@@ -16,10 +16,13 @@ class MyDashboardCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final borderColor = Theme.of(context).appBarTheme.backgroundColor ?? Theme.of(context).colorScheme.primary;
+
     return Card(
       elevation: 5,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
+        side: BorderSide(color: borderColor.withAlpha((0.9 * 255).round()), width: 1),
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(15),

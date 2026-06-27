@@ -9,13 +9,9 @@ class MyStudentsPage extends StatelessWidget {
     return Scaffold(
       drawer: const MyMenuDrawer(),
 
-      appBar: AppBar(
-        title: const Text("Students"),
-      ),
+      appBar: AppBar(title: const Text("Estudiantes")),
 
-      body: const Center(
-        child: Text("Students Page"),
-      ),
+      body: const Center(child: Text("Página de Estudiantes")),
     );
   }
 }

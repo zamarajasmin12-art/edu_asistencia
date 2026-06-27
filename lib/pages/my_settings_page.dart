@@ -8,17 +8,20 @@ class MySettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const MyMenuDrawer(),
-      
-      appBar: AppBar(title: const Text("Settings")),
+
+      appBar: AppBar(title: const Text("Configuración")),
       body: ListView(
         children: const [
-          ListTile(leading: Icon(Icons.person), title: Text("Edit Profile")),
-          ListTile(leading: Icon(Icons.lock), title: Text("Change Password")),
+          ListTile(leading: Icon(Icons.person), title: Text("Editar Perfil")),
+          ListTile(
+            leading: Icon(Icons.lock),
+            title: Text("Cambiar Contraseña"),
+          ),
           ListTile(
             leading: Icon(Icons.notifications),
-            title: Text("Notifications"),
+            title: Text("Notificaciones"),
           ),
-          ListTile(leading: Icon(Icons.sync), title: Text("Synchronization")),
+          ListTile(leading: Icon(Icons.sync), title: Text("Sincronización")),
         ],
       ),
     );

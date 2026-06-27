@@ -8,23 +8,15 @@ class MyWorkshopsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const MyMenuDrawer(),
-      
-      appBar: AppBar(
-        title: const Text("Workshops"),
-      ),
+
+      appBar: AppBar(title: const Text("Talleres")),
       body: ListView(
         children: const [
-          ListTile(
-            leading: Icon(Icons.engineering),
-            title: Text("Electronics Workshop"),
-          ),
-          ListTile(
-            leading: Icon(Icons.build),
-            title: Text("Mechanical Workshop"),
-          ),
+          ListTile(leading: Icon(Icons.engineering), title: Text("Deportes")),
+          ListTile(leading: Icon(Icons.build), title: Text("Arte y Cultura")),
           ListTile(
             leading: Icon(Icons.computer),
-            title: Text("Computer Workshop"),
+            title: Text("Idiomas y Habilidades"),
           ),
         ],
       ),
