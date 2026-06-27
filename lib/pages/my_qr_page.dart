@@ -14,7 +14,6 @@ class _MyQrPageState extends State<MyQrPage> {
   String? _lastCode;
   bool _cameraActive = true;
 
-  // Método simple para simular un escaneo durante la presentación.
   Future<void> _simulateScan() async {
     const sample = 'https://example.com/mi-codigo-demo';
     setState(() => _lastCode = sample);
