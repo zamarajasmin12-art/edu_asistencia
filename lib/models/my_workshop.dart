@@ -1,3 +1,4 @@
+/*Clase talleres*/
 class MyWorkshop {
   int? id;
   String name;
