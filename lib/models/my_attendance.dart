@@ -1,3 +1,4 @@
+/*Clase asistencia*/
 class MyAttendance {
   int? id;
   int studentId;
